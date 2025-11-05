@@ -137,3 +137,23 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+
+#added for react native
+# Expo
+.expo/
+.expo-shared/
+web-build/
+
+# Android
+android/.gradle/
+android/app/build/
+*.keystore
+
+# iOS
+ios/Pods/
+ios/build/
+
+# Misc
+.DS_Store 
+
