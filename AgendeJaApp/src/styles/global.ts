@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
     input: {
         width: "100%" , //vai preencher todo o espaco de largura
         height: 50, 
-        borderColor:" #ccc", //cor da borda
+        borderColor:"#ccc", //cor da borda
         marginBottom: 16, 
         borderRadius: 8, 
         paddingHorizontal: 12, //espaco horizontal interno
@@ -40,7 +40,7 @@ export const styles = StyleSheet.create({
 
     }, 
     buttonText:{
-        color:"fff", //e para ser uma cor branca
+        color:"#fff", //e para ser uma cor branca
         fontSize: 16, 
         fontWeight:"bold" ,
     }, 

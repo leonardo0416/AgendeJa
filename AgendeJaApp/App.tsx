@@ -1,4 +1,7 @@
+import "react-native-reanimated"
+import "react-native-gesture-handler";
 import React from "react" 
+
 import { NavigationContainer } from "@react-navigation/native"
 
 //esse import vai permitir criar uma pilha de telas para a navegacao 
@@ -12,6 +15,7 @@ import {createNativeStackNavigator} from "@react-navigation/native-stack"
 //depois que fiz o export no LoginScreen o erro sumiu
 import LoginScreen from "./src/screens/LoginScreen"
 import HomeScreen from "./src/screens/HomeScreen"
+
 
 const Stack = createNativeStackNavigator() // cria a stack de navegacao
 

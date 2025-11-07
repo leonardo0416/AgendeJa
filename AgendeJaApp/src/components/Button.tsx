@@ -14,7 +14,7 @@ interface ButtonProps{
 export default function CustomButton({title, onPress} : ButtonProps) {
     return(
         <TouchableOpacity style={styles.button} onPress={onPress}>
-            testar 
+            <Text > Testar </Text>
             <Text style={styles.buttonText}>{title}</Text>
         </TouchableOpacity>
     )

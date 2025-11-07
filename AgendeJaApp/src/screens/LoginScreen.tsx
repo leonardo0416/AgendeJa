@@ -6,12 +6,13 @@ import {styles} from "../styles/global"
 export default function LoginScreen({navigation}: any){
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState ("")
+    const isPasswordMode = true;
 
     const handleLogin = () =>{
         //vou ter que chamar de algum jeito o firebase aqui
 
         console.log("Login realizado com :" , email , password)
-        navigation.navigate("home")//fazendo isso vai redirecionar para home de novo
+        navigation.navigate("Home")//fazendo isso vai redirecionar para home de novo
 
     }
 
@@ -20,14 +21,17 @@ export default function LoginScreen({navigation}: any){
             <Text style = {styles.title}>Login</Text>
             <TextInput style={styles.input}
                         placeholder="Email"
-                        value="{email}"
-                        onChangeText={setEmail} />
+                        value={email}
+                        onChangeText={setEmail} 
+                        keyboardType="email-address" 
+                        autoCapitalize="none" />
 
             <TextInput style = {styles.input}
                         placeholder="Senha"
-                        secureTextEntry
-                        value="password"
+                        secureTextEntry = {isPasswordMode}
+                        value={password}
                         onChangeText={setPassword} />
+                        
                         
     <CustomButton title="Entrar" onPress = {handleLogin}/>
                         
