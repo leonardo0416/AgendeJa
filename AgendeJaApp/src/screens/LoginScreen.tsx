@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import {View, Text, TextInput} from "react-native"
-import CustomButton from "../components/Button"
-import {styles} from "../styles/global"
+import CustomButton from "../componentes/Button"
+import {globalStyles} from "../styles/global"
 
 export default function LoginScreen({navigation}: any){
     const [email, setEmail] = useState("")
@@ -17,16 +17,16 @@ export default function LoginScreen({navigation}: any){
     }
 
     return(
-        <View style = {styles.container}>
-            <Text style = {styles.title}>Login</Text>
-            <TextInput style={styles.input}
+        <View style = {globalStyles.container}>
+            <Text style = {globalStyles.title}>Login</Text>
+            <TextInput style={globalStyles.input}
                         placeholder="Email"
                         value={email}
                         onChangeText={setEmail} 
                         keyboardType="email-address" 
                         autoCapitalize="none" />
 
-            <TextInput style = {styles.input}
+            <TextInput style = {globalStyles.input}
                         placeholder="Senha"
                         secureTextEntry = {isPasswordMode}
                         value={password}

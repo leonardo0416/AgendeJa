@@ -3,14 +3,15 @@ import { StyleSheet } from "react-native"; //SRC/STYLES/GLOBAL.TS
 
 
 //estilos globais que vao poder ser usados em qualquer arquivo desde que eu importe 
-export const styles = StyleSheet.create({
+export const globalStyles = StyleSheet.create({
 
     //container principal para centralizar 
     container:{
         flex: 1, //ocupa a tela toda 
         justifyContent:"center", //centraliza verticalmente
         alignItems: "center", //centraliza horizontalmente
-        padding: 16, //espaco interno
+        padding: 20, //espaco interno
+        backgroundColor: "#121212"
 
     },
 
@@ -18,7 +19,8 @@ export const styles = StyleSheet.create({
         //titulos das telas que criamos
         fontSize: 24,
         fontWeight: "bold", //negrito
-        marginBottom: 25, //espaco abaixo
+        marginBottom: 10, //espaco abaixo
+        color: "#FFA500"
     }, 
 
     input: {
@@ -44,4 +46,8 @@ export const styles = StyleSheet.create({
         fontSize: 16, 
         fontWeight:"bold" ,
     }, 
+    subtitle:{
+        fontSize:16,
+        color: "#ccc"
+    },
  })

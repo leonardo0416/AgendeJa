@@ -1,7 +1,7 @@
 import React from "react"
 
 import { TouchableOpacity,Text } from "react-native"
-import {styles} from "../styles/global"
+import {globalStyles} from "../styles/global"
 
 interface ButtonProps{
     title: string //texto para o botao
@@ -13,9 +13,9 @@ interface ButtonProps{
 
 export default function CustomButton({title, onPress} : ButtonProps) {
     return(
-        <TouchableOpacity style={styles.button} onPress={onPress}>
+        <TouchableOpacity style={globalStyles.button} onPress={onPress}>
             <Text > Testar </Text>
-            <Text style={styles.buttonText}>{title}</Text>
+            <Text style={globalStyles.buttonText}>{title}</Text>
         </TouchableOpacity>
     )
 }
