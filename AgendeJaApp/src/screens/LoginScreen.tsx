@@ -12,7 +12,7 @@ export default function LoginScreen({navigation}: any){
         //vou ter que chamar de algum jeito o firebase aqui
 
         console.log("Login realizado com :" , email , password)
-        navigation.navigate("Home")//fazendo isso vai redirecionar para home de novo
+        navigation.navigate("MainTabs")//fazendo isso vai redirecionar para home de novo
 
     }
 

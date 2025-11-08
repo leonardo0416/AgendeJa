@@ -30,7 +30,7 @@ export default function App() {
                 options = {{headerShown:false}} />
                 
                 <Stack.Screen
-                name = "Home"
+                name = "MainTabs"
                 component = {BottonTabs}
                 options = {{headerShown:false}}/>
             </Stack.Navigator>
