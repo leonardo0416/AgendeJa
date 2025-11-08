@@ -11,7 +11,7 @@ function HomeScreen(){
     return ( //lembrar de sermpre usar o parenteses quando estiver retornando um valor
     <View style={globalStyles.container}>
         <Text style={globalStyles.title}>Home</Text>
-        <Text style={globalStyles.subtitle}>Servisos e destaques</Text>
+        <Text style={globalStyles.subtitle}>Serviços e destaques</Text>
     </View>)
 }
 function SearchScreen(){
@@ -54,7 +54,7 @@ export default function BottonTabs() {
                     iconName = focused ? "person" : "person-outline"
                 }
 
-                return <Ionicons name ="home-outline" size={24} color={color}/>
+                return <Ionicons name ={iconName as any} size={24} color={color}/>
             },
             tabBarActiveTintColor: "#FFA500", 
             tabBarInactiveTintColor: "#ccc",
