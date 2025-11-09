@@ -3,17 +3,13 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import {View, Text} from "react-native"
 import { Ionicons } from "@expo/vector-icons";
 import {globalStyles} from "../styles/global"
-//vou criar "telas temporarias e depois modificar"
+import HomeScreen from "../screens/HomeScreen";
 
 
 const Tab = createBottomTabNavigator();
-function HomeScreen(){
-    return ( //lembrar de sermpre usar o parenteses quando estiver retornando um valor
-    <View style={globalStyles.container}>
-        <Text style={globalStyles.title}>Home</Text>
-        <Text style={globalStyles.subtitle}>Serviços e destaques</Text>
-    </View>)
-}
+
+
+
 function SearchScreen(){
     return(
      <View style={globalStyles.container}>
@@ -68,7 +64,9 @@ export default function BottonTabs() {
         headerShown: false,
       })}
     >
+        {/*componente real*/}
       <Tab.Screen name="Home" component={HomeScreen} />
+
       <Tab.Screen name="Pesquisar" component={SearchScreen} />
       <Tab.Screen name="Agendar" component={AppointmentScreen} />
       <Tab.Screen name="Perfil" component={ProfileScreen} />

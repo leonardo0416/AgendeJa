@@ -10,7 +10,7 @@ import {createNativeStackNavigator} from "@react-navigation/native-stack"
 
 
 import LoginScreen from "./src/screens/LoginScreen"
-import BottonTabs from "./src/componentes/BottomTabs"
+import BottomTabs from "./src/componentes/BottomTabs"
 
 
 
@@ -31,7 +31,7 @@ export default function App() {
                 
                 <Stack.Screen
                 name = "MainTabs"
-                component = {BottonTabs}
+                component = {BottomTabs}
                 options = {{headerShown:false}}/>
             </Stack.Navigator>
         </NavigationContainer>
